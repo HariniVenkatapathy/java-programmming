@@ -1,0 +1,288 @@
+import java.util.*;
+public class patterns{
+    public static void main(String [] args){
+        Scanner  ip = new Scanner(System.in);
+        int n = ip.nextInt();
+
+        //to print square
+
+        /*for(int i=1;i<=n;i++){
+            for(int j=1;j<=n;j++){
+                System.out.print(" * ");
+            }
+            System.out.println(); */
+
+        //hollow square
+
+        /* for(int i=1;i<=n;i++){
+            for(int j=1;j<=n;j++){
+                if(i==1 || j==1 || i==n || j==n ){
+                    System.out.print(" * ");
+                }
+                else{
+                    System.out.print("   ");
+                }
+            }
+            System.out.println(); 
+
+        }*/
+        
+        //print equilateral triangle
+
+        /* for (int i = 1; i < n; i++) {
+            for (int j = 1; j < n-i; j++) {
+                System.out.print(" ");
+            }
+            for(int j =1;j<=i;j++){
+                System.out.print(i+" ");
+            }
+            System.out.println();
+        } */
+
+        // rhombus pattern
+
+        /* for (int i = 1; i <=n; i++) {
+            for (int j = 0; j <=i-1; j++) {
+                System.out.print(" ");   
+            }
+            for (int j = 1; j <=n; j++) {
+                System.out.print("*");
+            }
+           System.out.println(); 
+        } */
+
+        // hollow odd tri
+
+        /* for (int i = 1; i <=n; i++) {
+            for (int j = 1; j <=n-i; j++) {
+                System.out.print(" ");
+            }
+            for(int k=1;k<=(2*i-1);k++){
+                if(k==1 || i==n || k==(2*i-1)){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        } */ 
+
+        //inverted equi tri
+
+        /* for (int i = n; i >=1; i--) {
+            for (int j = 1; j <=n-i; j++) {
+                System.out.print(" ");
+            }
+            for(int j =1;j<=i;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        } */
+
+        // diamond equi
+
+        /* for (int i = 1; i <=n; i++) {
+            for (int j = 1; j <=n-i; j++) {
+                System.out.print(" ");
+            }
+            for(int j =1;j<=i;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        for (int i = n-1; i >=1; i--) {
+            for (int j = 1; j <=n-i; j++) {
+                System.out.print(" ");
+            }
+            for(int j =1;j<=i;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        } */
+       // diamond odd tri
+
+        /* for (int i = 1; i <=n; i++) {
+            for (int j = 1; j <=n-i; j++) {
+                System.out.print(" ");
+            }
+            for(int j =1;j<=2*i-1;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for (int i = n-1; i >=1; i--) {
+            for (int j = 1; j <=n-i; j++) {
+                System.out.print(" ");
+            }
+            for(int j =1;j<=2*i-1;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }*/
+
+        //hourglass equi
+
+        /* for (int i = n; i >=1; i--) {
+            for (int j = 1; j <=n-i; j++) {
+                System.out.print(" ");
+            }
+            for(int j =1;j<=i;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        for (int i = 1; i <=n; i++) {
+            for (int j = 1; j <=n-i; j++) {
+                System.out.print(" ");
+            }
+            for(int j =1;j<=i;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        } */
+
+       //pascals left triangle
+
+       /*for (int i = 1; i <=n; i++) {
+           for (int j= 1; j<=n-i; j++) {
+               System.out.print(" ");
+           }
+           for (int k= 1; k <=i; k++) {
+               System.out.print("*");
+           }
+           System.out.println();
+       }
+       for (int i = n-1; i>=1; i--) {
+        for (int j= 1; j<=n-i; j++) {
+            System.out.print(" ");
+        }
+        for (int j = 1; j <=i; j++) {
+            System.out.print("*");
+        }
+        System.out.println();
+    }*/
+
+    // pascals triangle
+
+    /*for(int i=1;i<=n;i++){
+        for(int j =1;j<=i;j++){
+            System.out.print("*");
+        }
+        System.out.println(" ");
+    }
+    for(int i=n-1;i>=1;i--){
+        for(int j =1;j<=i;j++){
+            System.out.print("*");
+        }
+        System.out.println(" ");
+    }*/
+    //pascals hollow left triangle
+
+    /*for (int i = 1; i <=n; i++) {
+        for (int j= 1; j<=n-i; j++) {
+            System.out.print(" ");
+        }
+        for (int k= 1; k <=i; k++) {
+            if(k==i || k==1 ){
+                System.out.print("*");
+            }
+            else{
+                System.out.print(" ");
+            }
+        }
+        System.out.println();
+    }
+    for (int i = n-1; i>=1; i--) {
+     for (int j= 1; j<=n-i; j++) {
+         System.out.print(" ");
+     }
+     for (int k = 1; k <=i; k++) {
+        if(k==i  ||k==1){
+            System.out.print("*");
+        }
+        else{
+            System.out.print(" ");
+        }
+     }
+     System.out.println();
+    } */
+      
+    // pascals hollow right triangle
+
+    /* for(int i=1;i<=n;i++){
+        for(int j =1;j<=i;j++){
+            if(j==i || j==1){
+                System.out.print("*");
+            }
+            else{
+                System.out.print(" ");
+            }
+        }
+        System.out.println(" ");
+    }
+    for(int i=n-1;i>=1;i--){
+        for(int j =1;j<=i;j++){
+            if(j==i || j==1){
+                System.out.print("*");
+            }
+            else{
+                System.out.print(" ");
+            }
+        }
+        System.out.println(" ");
+    } */
+
+    //gobu pattern cross
+
+    /*for(int i =1;i<=n;i++){
+        for(int j=1;j<=n;j++){
+            if(n%2!=0){
+                double temp = n/2;
+                Math.ceil(temp);
+                temp+=1;
+                if(i==temp || j==temp){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            else {
+                int mid1 = n/2;
+                int mid2 = mid1+1;
+                if(i==mid1 || i==mid2|| j==mid1 || j==mid2){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+        }
+        System.out.println();
+       } */
+
+       //alphabet inverted right triangle
+      /* 
+       for (int i = n; i >= 1; i--)  
+    { 
+        for (int j = 1; j <= i; j++)  
+        { 
+            System.out.printf("%c ", 'A' - 1 + i); 
+        } 
+        System.out.printf("\n"); 
+    } */
+
+//aplhabet right tri
+
+/*    for (int i = 1; i <= n; i++)  
+    { 
+        for (int j = 1; j <= i; j++)  
+        { 
+            System.out.printf("%c ", 64 + i); 
+        } 
+        System.out.printf("\n"); 
+    } 
+*/
+    }
+}
