@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Hello{
+    public static void main(String[] args){
+        Scanner ip=new Scanner(System.in);
+        System.out.println("Enter any number: ");
+        int num=ip.nextInt();
+        if(num==0 || num==1){
+            System.out.println("Then given number is neither a prime or a consonant.");
+            return;
+        }
+        int count=0;
+        int a=num/2;
+        for(int i=2;i<=a;i++){
+            if(num%i==0){
+                count+=1;
+            }
+        }
+        if (count>=1){
+                System.out.println("The given number is not a prime number.");
+            }
+            else{
+            System.out.println("The given number is a prime number.");
+            }
+
+    }
+}
