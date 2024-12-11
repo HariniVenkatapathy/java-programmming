@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class fibfib{
+    public static void main(String[] args){
+        Scanner ip = new Scanner(System.in);
+        System.out.println("Enter any number: ");
+        int num = ip.nextInt();
+        int a =0;
+        int b = 1;
+        int sum = 0;
+        int count=0;
+        while(count!=num){
+            sum = a+b;
+            a=b;
+            b=sum;
+            count+=1;
+        }
+        System.out.println(sum);
+    }
+}
