@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class ArmStrong{
+    public static void main(String[] args){
+        Scanner ip = new Scanner(System.in);
+        System.out.println("Enter any number: ");
+        int num = ip.nextInt();
+        int org = num;
+        int lastdigit = String.valueOf(num).length();
+        int sum=0;
+        while(num!=0){
+            int digits = num%10;
+            double pr= Math.pow(digits, lastdigit);
+            sum+=pr;
+            num/=10;
+        }
+        if(sum==org){
+            System.out.println("The given number is an ArmStrong Number.");
+        }
+        else{
+            System.out.println("The given number is not an ArmStrong Number.");
+        }
+    }
+}
