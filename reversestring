@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class RevString{
+    public static void main(String[] args){
+        Scanner ip = new Scanner(System.in);
+        System.out.println("Enter any word: ");
+        String word = ip.nextLine();
+        if(word.matches("[^a-zA-z0-9]")){
+            System.out.println("Invalid Input");
+        }
+        StringBuilder rev = new StringBuilder(word);
+        rev.reverse();
+        String reversed = rev.toString();
+        System.out.println(reversed);
+    }
+}
